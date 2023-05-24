@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.navbar>.list>#sword{
+    width: 8vw;
+    height: 5vh;
+}
+
+.navbar>.list>#sword2{
+    width: 8vw;
+    height: 5vh;
+    rotate: 180deg;
+}
+
+.navbar{
+    background-color: #1A1E26;
+    height: 10vh;
+    padding: 10px;
+    flex:1 1 0;
+}
+
+.list{
+    font-size: 40px;
+    list-style: none;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    gap: 5%;
+}
+
+.link{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.link::before,.link::after{
+    content: '';
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 3px;
+    background-color: #5ABFA3;
+    transform: scaleX(0);
+    transition: transform 0.25s;
+}
+
+.link::before{
+    top: -3px;
+    transform-origin: left;
+}
+
+.link::after{
+    bottom: -3px;
+    transform-origin: right;
+}
+
+.link:hover::before,
+.link:hover::after,
+.active::before,
+.active::after{
+transform: scaleX(1);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    gap: 5%;
+    height: 560px;
+    width: 100vw;
+    background-color: #3D4F73;
+}
+
+main>.info{
+    height: 150px;
+    width: 500px;
+    color: #fff;
+}
+
+main>.info>.text{
+    font-size: 20px;
+    width: 500px;
+    color: #fff;
+}
+
+main>.imag{
+    display:flex;
+    border-style: solid;
+    border-width:7px;
+    border-color:#1A1E26;
+}
+
+.landscape{
+    padding-top: 20px;
+    font-size: 50px;
+
+
+}
+
+.character{
+    display: flex;
+    padding: 20px;
+    height: 20rem;
+    padding-left: 200px;
+    padding-right: 200px;
+    gap: 1rem;
+}
+
+#imag1{
+    background-image: url(https://www.ecured.cu/images/e/e4/Ashenvale_landscape.jpg);
+}
+
+#imag2{
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/891/27/800/landscape-fantasy-art-world-of-warcraft-video-games-wallpaper-preview.jpg);
+}
+
+#imag3{
+    background-image: url(https://i0.wp.com/www.gamertribute.com/wp-content/uploads/2014/07/Icecrown-Citadel-132.jpg?fit=1088%2C612&ssl=1);
+}
+
+#imag4{
+    background-image: url(https://staticg.sportskeeda.com/editor/2022/03/1e3a1-16467373377123-1920.jpg);
+}
+
+#imag5{
+    background-image: url(https://wow.zamimg.com/uploads/blog/images/27157-world-of-warcraft-dragonflight-expansion-leaks-on-blizzard-website.jpg);
+
+}
+.character>div:hover{
+    flex: 3;
+}
+
+.carrousel{
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: flex .9s cubic-bezier(.25, .4, .45, 1.4);
+}
