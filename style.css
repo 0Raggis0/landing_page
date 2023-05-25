@@ -9,6 +9,7 @@
     --text-color2:white;
     --background-color1:#1A1E26;
     --background-color2:#3D4F73;
+    --background-color3:#324359;
     --transition-color:#5ABFA3;
     --borders-color:#1A1E26;
     /*Agregar Variables para colores y fuente de la pagina*/
@@ -19,12 +20,12 @@ body{
     width: 100vw;
 }
 
-.navbar>.list>#sword{
+#sword{
     width: 8vw;
     height: 5vh;
 }
 
-.navbar>.list>#sword2{
+#sword2{
     width: 8vw;
     height: 5vh;
     rotate: 180deg;
@@ -32,13 +33,13 @@ body{
 
 .navbar{
     background-color: var(--background-color1);
-    height: 10vh;
-    padding: 10px;
-    flex:1 1 0;
+    height: 11vh;
+    padding: 1vw;
+    flex:1 1 0; 
 }
 
 .list{
-    font-size: 40px;
+    font-size: 7vh;
     list-style: none;
     display: flex;
     align-items:center;
@@ -58,19 +59,19 @@ body{
     position: absolute;
     left: 0%;
     width: 100%;
-    height: 3px;
+    height: .5vh;
     background-color:var(--transition-color);
     transform: scaleX(0);
     transition: transform 0.25s;
 }
 
 .link::before{
-    top: -3px;
+    top: -.5vh;
     transform-origin: left;
 }
 
 .link::after{
-    bottom: -3px;
+    bottom: -.5vh;
     transform-origin: right;
 }
 
@@ -85,47 +86,56 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
     gap: 5%;
     height: 100vh;
     width: 100vw;
-    background-color: var(--background-color2);
+    background-color: var(--background-color3);
 }
 
 .info{
-    height: 150px;
-    width: 500px;
+    font-size: 3vh;
+    height: 15vh;
+    width: 40vw;
     color: var(--text-color2)
 }
 
 .text{
-    font-size: 20px;
-    width: 500px;
+    font-size: 3vh;
+    width: 40vw;
     color: var(--text-color2)
 }
 
 .imag{
     display:flex;
     border-style: solid;
-    border-width:7px;
+    border-width:.8vw;
     border-color:var(--borders-color);
 }
 
+#gif{
+    display: flex;
+    height: 50vh;
+    width: 40vw;
+}
+
 .landscape{
-    padding-top: 20px;
-    font-size: 50px;
-
-
+    padding: 2vh;
+    font-size: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color1);
+    color: var(--text-color2);
 }
 
 .character{
     display: flex;
-    padding: 20px;
-    height: 20rem;
-    padding-left: 200px;
-    padding-right: 200px;
-    gap: 1rem;
+    padding: 2vh;
+    height: 60vh;
+    padding-left: 20%;
+    padding-right: 20%;
+    gap: 1vw;
+    background-color: var(--background-color3);
 }
 
 #imag1{
@@ -141,7 +151,7 @@ main{
 }
 
 #imag4{
-    background-image: url(https://staticg.sportskeeda.com/editor/2022/03/1e3a1-16467373377123-1920.jpg);
+    background-image: url(https://www.kotaku.com.au/wp-content/uploads/sites/3/2014/05/05/tyqzexne3cjgjtdpfqwn.jpg?quality=80&resize=1280,720);
 }
 
 #imag5{
@@ -154,9 +164,58 @@ main{
 
 .carrousel{
     flex: 1;
-    border-radius: 1rem;
+    border-radius: 3vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 100%;
     transition: flex .9s cubic-bezier(.25, .4, .45, 1.4);
+}
+
+#landscapetext{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vh;
+}
+
+.phrase{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 100vw;
+    background-color: var(--background-color2);
+    color: var(--text-color2);
+}
+#phrase1{
+    height: 10vh;
+    width: 40vw;
+    padding-right: 10vh;
+}
+
+#phrase2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 12vw;
+}
+
+#footer{
+    background-color: var(--background-color1);
+}
+
+.footerlist{
+    height: 10vh;
+    list-style: none;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    gap: 5%;
+}
+
+.footerimage{
+    height: 5vh;
+    width: 5vh;
+    display: flex;
 }
